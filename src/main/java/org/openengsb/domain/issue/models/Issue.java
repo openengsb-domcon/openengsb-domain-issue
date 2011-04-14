@@ -17,6 +17,8 @@
 
 package org.openengsb.domain.issue.models;
 
+import java.util.List;
+
 public class Issue {
 
 
@@ -46,7 +48,8 @@ public class Issue {
         REPORTER,
         PRIORITY,
         STATUS,
-        TYPE
+        TYPE,
+        COMPONENT
     }
 
     public enum Type implements IssueAttribute {
@@ -65,6 +68,15 @@ public class Issue {
     private Status status;
     private String dueVersion;
     private Type type;
+    private List<String> components;
+
+    public List<String> getComponents() {
+        return components;
+    }
+
+    public void setComponents(List<String> components) {
+        this.components = components;
+    }
 
     public String getId() {
         return id;
