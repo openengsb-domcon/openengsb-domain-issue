@@ -60,11 +60,15 @@ public interface IssueDomain extends Domain {
     
     /**
      * adds a component to specified issue
+     * @param component: name of component
+     * @param id: id of issue
      */
     void addComponent(String component, String id);
     
     /**
-     * removes componet from specified issue
+     * removes component from specified issue
+     * @param component: name of component
+     * @param id: id of issue
      */
     void removeComponent(String component, String id);
 }
