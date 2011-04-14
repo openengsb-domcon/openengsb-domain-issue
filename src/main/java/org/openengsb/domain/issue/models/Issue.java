@@ -48,7 +48,8 @@ public class Issue {
         REPORTER,
         PRIORITY,
         STATUS,
-        TYPE
+        TYPE,
+        COMPONENT
     }
 
     public enum Type implements IssueAttribute {

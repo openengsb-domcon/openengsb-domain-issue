@@ -59,16 +59,14 @@ public interface IssueDomain extends Domain {
     ArrayList<String> generateReleaseReport(String releaseId);
     
     /**
-     * adds a component to specified issue
+     * adds a component
      * @param component: name of component
-     * @param id: id of issue
      */
-    void addComponent(String component, String id);
+    void addComponent(String component);
     
     /**
-     * removes component from specified issue
+     * removes component
      * @param component: name of component
-     * @param id: id of issue
      */
-    void removeComponent(String component, String id);
+    void removeComponent(String component);
 }
