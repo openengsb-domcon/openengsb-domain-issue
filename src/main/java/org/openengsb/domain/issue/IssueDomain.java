@@ -57,4 +57,14 @@ public interface IssueDomain extends Domain {
      * generates an report for all closed issues belonging the the specified release
      */
     ArrayList<String> generateReleaseReport(String releaseId);
+    
+    /**
+     * adds a component to specified issue
+     */
+    void addComponent(String component, String id);
+    
+    /**
+     * removes componet from specified issue
+     */
+    void removeComponent(String component, String id);
 }

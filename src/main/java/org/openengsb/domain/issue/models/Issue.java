@@ -17,6 +17,8 @@
 
 package org.openengsb.domain.issue.models;
 
+import java.util.Vector;
+
 public class Issue {
 
 
@@ -65,6 +67,15 @@ public class Issue {
     private Status status;
     private String dueVersion;
     private Type type;
+    private Vector<String> components = new Vector<String>();
+
+    public Vector<String> getComponents() {
+        return components;
+    }
+
+    public void setComponents(Vector<String> components) {
+        this.components = components;
+    }
 
     public String getId() {
         return id;
