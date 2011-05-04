@@ -17,7 +17,7 @@
 
 package org.openengsb.domain.issue;
 
-import java.util.ArrayList;
+import java.util.List;
 import java.util.HashMap;
 
 import org.openengsb.core.api.Domain;
@@ -56,7 +56,7 @@ public interface IssueDomain extends Domain {
     /**
      * generates an report for all closed issues belonging the the specified release
      */
-    ArrayList<String> generateReleaseReport(String releaseId);
+    List<String> generateReleaseReport(String releaseId);
 
     /**
      * adds a component
