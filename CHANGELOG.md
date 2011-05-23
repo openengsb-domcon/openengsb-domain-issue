@@ -1,3 +1,15 @@
+openengsb-domain-issue-1.2.2 2011-05-23
+---------------------------------------------------------------------
+
+Second support release of the Issue Domain upgrading to the latest OpenEngSB Framework.
+
+** Library Upgrade
+    * [OPENENGSB-1609] - Upgrade openengsb-framework to 1.3.0.M2
+
+** Task
+    * [OPENENGSB-1574] - Release openengsb-domain-issue-1.2.2
+
+
 openengsb-domain-issue-1.2.1 2011-05-16
 ---------------------------------------------------------------------
 
