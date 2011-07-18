@@ -17,48 +17,11 @@
 
 package org.openengsb.domain.issue.models;
 
-import java.util.List;
-import org.openengsb.core.api.model.OpenEngSBModel;
-
-public interface Issue extends OpenEngSBModel {
-
-    List<String> getComponents();
-
-    void setComponents(List<String> components);
-
-    String getId();
-
-    void setId(String id);
-    
-    String getSummary();
-
-    void setSummary(String summary);
-
-    String getDescription();
-
-    void setDescription(String description);
-
-    String getOwner();
-
-    void setOwner(String owner);
-    
-    String getReporter();
-
-    void setReporter(String reporter);
-
-    Priority getPriority();
-
-    void setPriority(Priority priority);
-
-    Status getStatus();
-
-    void setStatus(Status status);
-
-    String getDueVersion();
-
-    void setDueVersion(String dueVersion);
-
-    Type getType();
-
-    void setType(Type type);
+public enum Priority implements IssueAttribute {
+    IMMEDIATE,
+    URGEND,
+    HIGH,
+    NORMAL,
+    LOW,
+    NONE
 }
