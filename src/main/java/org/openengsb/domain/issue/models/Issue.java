@@ -19,6 +19,7 @@ package org.openengsb.domain.issue.models;
 
 import java.util.List;
 import org.openengsb.core.api.model.OpenEngSBModel;
+import org.openengsb.core.api.model.OpenEngSBModelId;
 
 public interface Issue extends OpenEngSBModel {
 
@@ -28,6 +29,7 @@ public interface Issue extends OpenEngSBModel {
 
     String getId();
 
+    @OpenEngSBModelId
     void setId(String id);
     
     String getSummary();
