@@ -24,6 +24,7 @@ import org.openengsb.core.api.Domain;
 import org.openengsb.domain.issue.models.Issue;
 import org.openengsb.domain.issue.models.IssueAttribute;
 
+// @extract-start IssueDomain
 public interface IssueDomain extends Domain {
 
     /**
@@ -68,3 +69,4 @@ public interface IssueDomain extends Domain {
      */
     void removeComponent(String component);
 }
+// @extract-end
