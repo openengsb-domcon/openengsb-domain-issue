@@ -15,11 +15,7 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.issue.models;
+package org.openengsb.domain.issue;
 
-public enum Status implements IssueAttribute {
-    NEW,
-    ASSIGNED,
-    CLOSED,
-    UNASSIGNED
+public interface IssueAttribute {
 }

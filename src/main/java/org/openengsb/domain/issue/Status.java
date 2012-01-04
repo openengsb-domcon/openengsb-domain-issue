@@ -15,13 +15,11 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.issue.models;
+package org.openengsb.domain.issue;
 
-public enum Priority implements IssueAttribute {
-    IMMEDIATE,
-    URGEND,
-    HIGH,
-    NORMAL,
-    LOW,
-    NONE
+public enum Status implements IssueAttribute {
+    NEW,
+    ASSIGNED,
+    CLOSED,
+    UNASSIGNED
 }

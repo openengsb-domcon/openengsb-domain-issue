@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.issue.models;
+package org.openengsb.domain.issue;
 
 import java.util.List;
 import org.openengsb.core.api.model.OpenEngSBModel;

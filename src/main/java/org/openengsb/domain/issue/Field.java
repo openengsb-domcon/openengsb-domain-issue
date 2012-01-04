@@ -15,7 +15,16 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.issue.models;
+package org.openengsb.domain.issue;
 
-public interface IssueAttribute {
+public enum Field implements IssueAttribute {
+    Field,
+    SUMMARY,
+    DESCRIPTION,
+    OWNER,
+    REPORTER,
+    PRIORITY,
+    STATUS,
+    TYPE,
+    COMPONENT
 }
