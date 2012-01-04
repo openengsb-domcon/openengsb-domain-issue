@@ -29,7 +29,7 @@
   <properties>
     <bundle.symbolicName>org.openengsb.domain.issue</bundle.symbolicName>
     <bundle.namespace>org.openengsb.domain.issue</bundle.namespace>
-    <domain.name>Issue</domain.name>
+    <domain.name>IssueDomain</domain.name>
     <openengsb.compile.version>2.1.2</openengsb.compile.version>
   </properties>
 
