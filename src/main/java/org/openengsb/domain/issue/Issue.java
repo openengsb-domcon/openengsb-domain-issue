@@ -18,49 +18,104 @@
 package org.openengsb.domain.issue;
 
 import java.util.List;
-import org.openengsb.core.api.model.OpenEngSBModel;
-import org.openengsb.core.api.model.OpenEngSBModelId;
 
-public interface Issue extends OpenEngSBModel {
+import org.openengsb.core.api.Constants;
+import org.openengsb.core.api.model.annotation.Model;
+import org.openengsb.core.api.model.annotation.OpenEngSBModelId;
+import org.openengsb.labs.delegation.service.Provide;
 
-    List<String> getComponents();
-
-    void setComponents(List<String> components);
-
-    String getId();
-
+@Provide(context = { Constants.DELEGATION_CONTEXT_MODELS })
+@Model
+public class Issue {
     @OpenEngSBModelId
-    void setId(String id);
-    
-    String getSummary();
+    private String id;
+    private String summary;
+    private String description;
+    private String owner;
+    private String reporter;
+    private Priority priority;
+    private Status status;
+    private String dueVersion;
+    private Type type;
+    private List<String> components;
 
-    void setSummary(String summary);
+    public String getId() {
+        return id;
+    }
 
-    String getDescription();
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    void setDescription(String description);
+    public String getSummary() {
+        return summary;
+    }
 
-    String getOwner();
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
 
-    void setOwner(String owner);
-    
-    String getReporter();
+    public String getDescription() {
+        return description;
+    }
 
-    void setReporter(String reporter);
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-    Priority getPriority();
+    public String getOwner() {
+        return owner;
+    }
 
-    void setPriority(Priority priority);
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
 
-    Status getStatus();
+    public String getReporter() {
+        return reporter;
+    }
 
-    void setStatus(Status status);
+    public void setReporter(String reporter) {
+        this.reporter = reporter;
+    }
 
-    String getDueVersion();
+    public Priority getPriority() {
+        return priority;
+    }
 
-    void setDueVersion(String dueVersion);
+    public void setPriority(Priority priority) {
+        this.priority = priority;
+    }
 
-    Type getType();
+    public Status getStatus() {
+        return status;
+    }
 
-    void setType(Type type);
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public String getDueVersion() {
+        return dueVersion;
+    }
+
+    public void setDueVersion(String dueVersion) {
+        this.dueVersion = dueVersion;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public List<String> getComponents() {
+        return components;
+    }
+
+    public void setComponents(List<String> components) {
+        this.components = components;
+    }
 }
