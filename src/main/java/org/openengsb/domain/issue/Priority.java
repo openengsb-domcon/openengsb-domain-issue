@@ -19,7 +19,7 @@ package org.openengsb.domain.issue;
 
 public enum Priority implements IssueAttribute {
     IMMEDIATE,
-    URGEND,
+    URGENT,
     HIGH,
     NORMAL,
     LOW,
