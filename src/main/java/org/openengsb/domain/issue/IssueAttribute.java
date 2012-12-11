@@ -17,5 +17,9 @@
 
 package org.openengsb.domain.issue;
 
+import org.openengsb.core.api.Constants;
+import org.openengsb.labs.delegation.service.Provide;
+
+@Provide(context = { Constants.DELEGATION_CONTEXT_MODELS })
 public interface IssueAttribute {
 }
